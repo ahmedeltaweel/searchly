@@ -4,11 +4,14 @@ from utils import process_docs, valid_pathes, perform_scored_search
 
 
 def main():
+    """
+    Main application entrypoint, bootstrap the indexer and db.
+    """
     if len(sys.argv) < 2:
-        sys.exit('Please, provide a valid system path')
+        sys.exit('Please, provide a valid system dir path')
 
     if not valid_pathes(sys.argv[1:]):
-        sys.exit('{} is not a valid Dir path.'.format(path))
+        sys.exit('{} is not a valid dir path.'.format(path))
 
     db, index = process_docs(sys.argv[1:])
 

@@ -15,6 +15,9 @@ def valid_pathes(pathes):
 
 
 def process_docs(pathes):
+    """
+    Index the files and their content as documents
+    """
     # building the index
     print('start processing files in each dir ...')
 
@@ -37,6 +40,9 @@ def process_docs(pathes):
 
 
 def perform_scored_search(db, index, query):
+    """
+    Search the inverted index and score the matched results
+    """
     term_score = 100 / len(query.split())
     result = index.lookup_query(query)
     document_score = OrderedDict()
