@@ -13,11 +13,3 @@ To run the application, Simply run the following command from with in the app di
 $ python3 main.py /path/to/dir/ /path/to/another/dir/
 
 ```
-
-## TODO
-- Write unit tests to each component.
-- Add more documentation to each component with examples.
-- Enhance the score formula of matching, currently it's very naive.
-- Add [Pre-commit](https://github.com/pre-commit/pre-commit) to the application repo to maintain the structure and code style.
-- Add a requirements file to hold application dependencies.
-- If needed containerizing the application using [Docker](https://docker.com).
